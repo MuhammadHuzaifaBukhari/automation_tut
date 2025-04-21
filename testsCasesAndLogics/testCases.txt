@@ -1,0 +1,39 @@
+#---------------------------------------------ST Automation Test Cases and Logics-----------------------------------------#
+
+#--------------------Load Browser-------------------#
+
+--load browser(chrome)
+--load ST HomePage > simplitaught.com 
+
+
+#--------------------Landing Page--------------------#
+
+--Learn more > Students > Read more/Read less > Learn more about Annotations(video) > return to main page
+--hover to roles > Students,Educators,Content Creator,Institutions
+--View all > Business & Economics > return to main page
+--Learn more about AI & ML Model > play and close video
+
+#---footer---#
+
+--Students > Read more/ Read less
+--Educators  
+--Content Creators
+--Institutions
+--What is ST?
+--How it Works?
+--Books
+--Platform
+--About Us
+--Contact Us > Input First Name,Last Name, Email Address, How Can Wr Help?
+--FAQ's 
+--Privacy Policy
+--Terms and conditions
+--Refund policy
+
+
+#----------------------Auth---------------------------#
+#---Sign In---#
+
+--Landing Page > Signin
+--Signin > Input Email Address and Passowrd
+--click button > Sign in
