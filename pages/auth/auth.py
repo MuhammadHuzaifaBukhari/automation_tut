@@ -18,7 +18,7 @@ def sign_in(driver):
     # Ensure password input is interactable and scroll into view
     password_input = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input[placeholder='8+ Characters']")))
     password_input.send_keys("admin1234")
-    time.sleep(5)
+    time.sleep(2)
 
     # Wait and click on the sign-in button
     submit_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Sign in']")))
