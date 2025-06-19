@@ -167,3 +167,492 @@ Stacktrace:
 2025-06-13 10:28:50,763 - INFO - Successfully completed action: Click global chat element
 2025-06-13 10:29:04,984 - INFO - message typed into input box
 2025-06-13 10:29:05,496 - INFO - Successfully completed action: click send button
+2025-06-16 11:11:09,811 - INFO - ====== WebDriver manager ======
+2025-06-16 11:11:12,138 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-16 11:11:12,549 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-16 11:11:12,869 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-16 11:11:13,656 - INFO - WebDriver version 137.0.7151.70 selected
+2025-06-16 11:11:13,660 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.70/win32/chromedriver-win32.zip
+2025-06-16 11:11:13,661 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.70/win32/chromedriver-win32.zip
+2025-06-16 11:11:13,921 - INFO - Driver downloading response is 200
+2025-06-16 11:11:14,928 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-16 11:11:16,047 - INFO - Driver has been saved in cache [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.70]
+2025-06-16 11:11:39,930 - INFO - Successfully completed action: Click chat button
+2025-06-16 11:11:45,324 - INFO - Successfully completed action: Click global chat element
+2025-06-16 11:11:58,137 - INFO - message typed into input box
+2025-06-16 11:11:58,506 - INFO - Successfully completed action: click send button
+2025-06-18 14:21:19,662 - INFO - ====== WebDriver manager ======
+2025-06-18 14:21:39,825 - INFO - ====== WebDriver manager ======
+2025-06-18 14:21:48,555 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:21:49,019 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:21:49,336 - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-06-18 14:21:49,336 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:21:50,152 - INFO - WebDriver version 137.0.7151.119 selected
+2025-06-18 14:21:50,158 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-06-18 14:21:50,158 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-06-18 14:22:11,454 - INFO - Driver downloading response is 200
+2025-06-18 14:22:12,427 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:22:14,466 - INFO - Driver has been saved in cache [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-06-18 14:22:39,284 - INFO - Successfully completed action: Click chat button
+2025-06-18 14:22:44,818 - INFO - Successfully completed action: Click global chat element
+2025-06-18 14:22:57,734 - INFO - message typed into input box
+2025-06-18 14:22:58,256 - INFO - Successfully completed action: click send button
+2025-06-18 14:23:29,325 - INFO - ====== WebDriver manager ======
+2025-06-18 14:23:32,523 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:23:32,945 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:23:33,344 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-18 14:23:58,470 - INFO - Successfully completed action: Click chat button
+2025-06-18 14:24:03,955 - INFO - Successfully completed action: Click global chat element
+2025-06-18 14:24:16,997 - INFO - message typed into input box
+2025-06-18 14:24:17,445 - INFO - Successfully completed action: click send button
+2025-06-18 14:24:27,985 - ERROR - Failed during: translate button clicked | Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xe83b03+62899]
+	GetHandleVerifier [0x0xe83b44+62964]
+	(No symbol) [0x0xcb10f3]
+	(No symbol) [0x0xcf980e]
+	(No symbol) [0x0xcf9bab]
+	(No symbol) [0x0xd425c2]
+	(No symbol) [0x0xd1e554]
+	(No symbol) [0x0xd3fd81]
+	(No symbol) [0x0xd1e306]
+	(No symbol) [0x0xced670]
+	(No symbol) [0x0xcee4e4]
+	GetHandleVerifier [0x0x10e4793+2556483]
+	GetHandleVerifier [0x0x10dfd02+2537394]
+	GetHandleVerifier [0x0xeaa2fa+220586]
+	GetHandleVerifier [0x0xe9aae8+157080]
+	GetHandleVerifier [0x0xea141d+184013]
+	GetHandleVerifier [0x0xe8ba68+95512]
+	GetHandleVerifier [0x0xe8bc10+95936]
+	GetHandleVerifier [0x0xe76b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-18 14:24:27,985 - CRITICAL - translate button not clicked error is Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xe83b03+62899]
+	GetHandleVerifier [0x0xe83b44+62964]
+	(No symbol) [0x0xcb10f3]
+	(No symbol) [0x0xcf980e]
+	(No symbol) [0x0xcf9bab]
+	(No symbol) [0x0xd425c2]
+	(No symbol) [0x0xd1e554]
+	(No symbol) [0x0xd3fd81]
+	(No symbol) [0x0xd1e306]
+	(No symbol) [0x0xced670]
+	(No symbol) [0x0xcee4e4]
+	GetHandleVerifier [0x0x10e4793+2556483]
+	GetHandleVerifier [0x0x10dfd02+2537394]
+	GetHandleVerifier [0x0xeaa2fa+220586]
+	GetHandleVerifier [0x0xe9aae8+157080]
+	GetHandleVerifier [0x0xea141d+184013]
+	GetHandleVerifier [0x0xe8ba68+95512]
+	GetHandleVerifier [0x0xe8bc10+95936]
+	GetHandleVerifier [0x0xe76b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-18 14:48:25,385 - INFO - ====== WebDriver manager ======
+2025-06-18 14:48:28,100 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:48:28,484 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:48:28,802 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-18 14:48:53,093 - INFO - Successfully completed action: Click chat button
+2025-06-18 14:48:58,576 - INFO - Successfully completed action: Click global chat element
+2025-06-18 14:49:11,751 - INFO - message typed into input box
+2025-06-18 14:49:12,260 - INFO - Successfully completed action: click send button
+2025-06-18 14:55:41,929 - INFO - ====== WebDriver manager ======
+2025-06-18 14:55:44,495 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:55:44,864 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-18 14:55:45,192 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-18 14:56:09,480 - INFO - Successfully completed action: Click chat button
+2025-06-18 14:56:14,911 - INFO - Successfully completed action: Click global chat element
+2025-06-18 14:56:28,208 - INFO - message typed into input box
+2025-06-18 14:56:28,699 - INFO - Successfully completed action: click send button
+2025-06-18 14:56:38,777 - ERROR - error in clicking translate button as Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xe83b03+62899]
+	GetHandleVerifier [0x0xe83b44+62964]
+	(No symbol) [0x0xcb10f3]
+	(No symbol) [0x0xcf980e]
+	(No symbol) [0x0xcf9bab]
+	(No symbol) [0x0xd425c2]
+	(No symbol) [0x0xd1e554]
+	(No symbol) [0x0xd3fd81]
+	(No symbol) [0x0xd1e306]
+	(No symbol) [0x0xced670]
+	(No symbol) [0x0xcee4e4]
+	GetHandleVerifier [0x0x10e4793+2556483]
+	GetHandleVerifier [0x0x10dfd02+2537394]
+	GetHandleVerifier [0x0xeaa2fa+220586]
+	GetHandleVerifier [0x0xe9aae8+157080]
+	GetHandleVerifier [0x0xea141d+184013]
+	GetHandleVerifier [0x0xe8ba68+95512]
+	GetHandleVerifier [0x0xe8bc10+95936]
+	GetHandleVerifier [0x0xe76b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 10:17:35,117 - INFO - ====== WebDriver manager ======
+2025-06-19 10:17:44,268 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:17:45,272 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:17:45,608 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:17:46,478 - INFO - WebDriver version 137.0.7151.119 selected
+2025-06-19 10:17:46,491 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-06-19 10:17:46,491 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-06-19 10:17:46,759 - INFO - Driver downloading response is 200
+2025-06-19 10:17:47,790 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:17:51,560 - INFO - Driver has been saved in cache [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-06-19 10:18:26,417 - INFO - Successfully completed action: Click chat button
+2025-06-19 10:18:32,383 - INFO - Successfully completed action: Click global chat element
+2025-06-19 10:18:54,015 - INFO - message typed into input box
+2025-06-19 10:18:57,468 - INFO - Successfully completed action: click send button
+2025-06-19 10:19:08,615 - ERROR - error in clicking translate button as Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 10:24:09,361 - INFO - ====== WebDriver manager ======
+2025-06-19 10:24:13,023 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:24:13,391 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:24:56,071 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-19 10:25:57,269 - INFO - Successfully completed action: Click chat button
+2025-06-19 10:26:07,428 - INFO - Successfully completed action: Click global chat element
+2025-06-19 10:26:20,661 - INFO - message typed into input box
+2025-06-19 10:26:21,248 - INFO - Successfully completed action: click send button
+2025-06-19 10:26:31,595 - ERROR - Failed during: translate button clicked | Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 10:26:31,596 - ERROR - tranlate button not clicked error is Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 10:28:34,876 - INFO - ====== WebDriver manager ======
+2025-06-19 10:28:37,863 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:28:38,215 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 10:28:38,552 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-19 10:29:47,748 - INFO - Successfully completed action: Click chat button
+2025-06-19 10:29:53,488 - INFO - Successfully completed action: Click global chat element
+2025-06-19 10:30:07,167 - INFO - message typed into input box
+2025-06-19 10:30:08,193 - INFO - Successfully completed action: click send button
+2025-06-19 10:30:08,978 - INFO - Successfully completed action: translate button clicked
+2025-06-19 14:56:39,955 - INFO - ====== WebDriver manager ======
+2025-06-19 14:56:49,131 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 14:56:49,610 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 14:56:49,996 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-19 14:57:23,076 - INFO - Successfully completed action: Click chat button
+2025-06-19 14:57:29,534 - INFO - Successfully completed action: Click global chat element
+2025-06-19 14:57:42,995 - INFO - message typed into input box
+2025-06-19 14:57:43,434 - INFO - Successfully completed action: click send button
+2025-06-19 14:57:53,814 - ERROR - Failed during: translate button clicked | Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:57:53,815 - ERROR - translate button not clicked error is Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:57:53,867 - ERROR - Failed during: select language | Error: Message: invalid selector: Unable to locate an element with the xpath expression .p-dropdown-label.p-inputtext.p-placeholder because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '.p-dropdown-label.p-inputtext.p-placeholder' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x5178e0]
+	(No symbol) [0x0x519c0a]
+	(No symbol) [0x0x519c87]
+	(No symbol) [0x0x5590a4]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:57:53,867 - ERROR - can not select language as Message: invalid selector: Unable to locate an element with the xpath expression .p-dropdown-label.p-inputtext.p-placeholder because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '.p-dropdown-label.p-inputtext.p-placeholder' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x5178e0]
+	(No symbol) [0x0x519c0a]
+	(No symbol) [0x0x519c87]
+	(No symbol) [0x0x5590a4]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:58:04,456 - ERROR - Failed during: choose arabic language | Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:58:04,457 - ERROR - can't find arabic as Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:58:14,733 - ERROR - Failed during: translate that specific message | Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 14:58:14,733 - ERROR - can't do translate that specific message to arabic Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x6e3b03+62899]
+	GetHandleVerifier [0x0x6e3b44+62964]
+	(No symbol) [0x0x5110f3]
+	(No symbol) [0x0x55980e]
+	(No symbol) [0x0x559bab]
+	(No symbol) [0x0x5a25c2]
+	(No symbol) [0x0x57e554]
+	(No symbol) [0x0x59fd81]
+	(No symbol) [0x0x57e306]
+	(No symbol) [0x0x54d670]
+	(No symbol) [0x0x54e4e4]
+	GetHandleVerifier [0x0x944793+2556483]
+	GetHandleVerifier [0x0x93fd02+2537394]
+	GetHandleVerifier [0x0x70a2fa+220586]
+	GetHandleVerifier [0x0x6faae8+157080]
+	GetHandleVerifier [0x0x70141d+184013]
+	GetHandleVerifier [0x0x6eba68+95512]
+	GetHandleVerifier [0x0x6ebc10+95936]
+	GetHandleVerifier [0x0x6d6b5a+9738]
+	BaseThreadInitThunk [0x0x7613fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775182ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7751827e+238]
+
+2025-06-19 15:03:32,200 - INFO - ====== WebDriver manager ======
+2025-06-19 15:03:35,270 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 15:03:35,653 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 15:03:35,991 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-19 15:04:04,234 - INFO - Successfully completed action: Click chat button
+2025-06-19 15:04:10,030 - INFO - Successfully completed action: Click global chat element
+2025-06-19 15:04:23,995 - INFO - message typed into input box
+2025-06-19 15:04:24,465 - INFO - Successfully completed action: click send button
+2025-06-19 15:04:25,259 - INFO - Successfully completed action: translate message button clicked
+2025-06-19 15:04:35,829 - INFO - Successfully completed action: select language
+2025-06-19 15:04:40,073 - INFO - Successfully completed action: choose arabic language
+2025-06-19 15:04:42,640 - INFO - Successfully completed action: translate that specific message
+2025-06-19 15:08:20,144 - INFO - ====== WebDriver manager ======
+2025-06-19 15:08:23,988 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 15:08:24,352 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 15:08:24,707 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-19 15:09:01,730 - INFO - Successfully completed action: Click chat button
+2025-06-19 15:09:08,275 - INFO - Successfully completed action: Click global chat element
+2025-06-19 15:09:38,989 - INFO - Message typed successfully.
+2025-06-19 15:09:42,235 - INFO - Successfully completed action: Click send button
+2025-06-19 15:09:43,092 - INFO - Successfully completed action: Click translate button
+2025-06-19 15:10:04,988 - INFO - Successfully completed action: Open language dropdown
+2025-06-19 15:10:21,825 - INFO - Successfully completed action: Select Arabic language
+2025-06-19 15:10:34,476 - INFO - Successfully completed action: Confirm translation
+2025-06-19 16:37:58,349 - INFO - ====== WebDriver manager ======
+2025-06-19 16:38:01,878 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 16:38:02,279 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-19 16:38:02,626 - INFO - Driver [C:\Users\Huzaifa\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-19 16:38:28,170 - INFO - Successfully completed action: Click chat button
+2025-06-19 16:38:33,885 - INFO - Successfully completed action: Click global chat element
+2025-06-19 16:38:45,190 - INFO - Message typed successfully.
+2025-06-19 16:38:47,787 - INFO - Successfully completed action: Click send button
+2025-06-19 16:38:48,554 - INFO - Successfully completed action: Click translate button
+2025-06-19 16:38:59,942 - INFO - Successfully completed action: Open language dropdown
+2025-06-19 16:39:06,400 - INFO - Successfully completed action: Select Arabic language
+2025-06-19 16:39:10,130 - INFO - Successfully completed action: Confirm translation

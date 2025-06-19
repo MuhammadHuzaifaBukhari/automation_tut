@@ -1,5 +1,3 @@
-from logging import exception
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -11,42 +9,20 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 import time
 import sys
 import logging
+from webdriver_manager.chrome import ChromeDriverManager
+
+# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     filename='Message_translation.log',
     filemode='a'
 )
+
 def log_and_raise_error(action_description, exception):
     logging.error(f"Failed during: {action_description} | Error: {exception}")
     raise exception
 
-from pages.auth.auth import sign_in
-sys.path.append(r'D:\SimpliTaught QA\ST Automation11\pages\auth')
-
-chrome_options = Options()
-chrome_options.add_experimental_option("detach", True)
-
-from webdriver_manager.chrome import ChromeDriverManager
-
-# Initialize Chrome with Service
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-
-
-simplitaught_home_page_url = 'https://simplitaught.com/'
-
-driver.get(simplitaught_home_page_url)
-driver.maximize_window()
-
-wait = WebDriverWait(driver, 60)
-actions = ActionChains(driver)
-
-
-#-----------------------Sign in------------------#
-sign_in(driver)
-time.sleep(5)
-
-#---------message translation(global chat)-------#
 def wait_and_click(by, identifier, action_desc, wait_time=10):
     try:
         element = WebDriverWait(driver, wait_time).until(
@@ -59,52 +35,85 @@ def wait_and_click(by, identifier, action_desc, wait_time=10):
     except (TimeoutException, WebDriverException) as e:
         log_and_raise_error(action_desc, e)
 
-try:
-    chat_button = (".p-button.p-component.styles_notifyBtn__H26hJ.p-button-icon-only.p-button-text.p-button-rounded")
-    wait_and_click(By.CSS_SELECTOR, chat_button, "Click chat button")
-    time.sleep(5)
-except Exception as e:
-    logging.critical(f"error in clicking chat button: {e}")
+# Setup Chrome
+chrome_options = Options()
+chrome_options.add_experimental_option("detach", True)
 
-try:
-    global_chat_element = ("//span[normalize-space()='Global Chat Community']")
-    wait_and_click(By.XPATH, global_chat_element, "Click global chat element")
-    time.sleep(5)
-except Exception as e:
-    logging.critical(f"error in clicking global chat element: {e}")
+# Initialize driver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
 
+# Visit SimpliTaught
+driver.get('https://simplitaught.com/')
+
+# Required after import to resolve relative path
+sys.path.append(r'D:\SimpliTaught QA\ST Automation11\pages\auth')
+from pages.auth.auth import sign_in
+
+# Actions and wait setup
+actions = ActionChains(driver)
+wait = WebDriverWait(driver, 60)
+
+# -------- Sign In --------
+sign_in(driver)
+time.sleep(5)
+
+# -------- Chat Operations --------
+chat_sequence = [
+    (By.CSS_SELECTOR, ".p-button.p-component.styles_notifyBtn__H26hJ.p-button-icon-only.p-button-text.p-button-rounded", "Click chat button"),
+    (By.XPATH, "//span[normalize-space()='Global Chat Community']", "Click global chat element"),
+]
+
+for by, locator, desc in chat_sequence:
+    try:
+        wait_and_click(by, locator, desc)
+        time.sleep(5)
+    except Exception as e:
+        logging.critical(f"{desc} failed: {e}")
+
+# -------- Select User Chat --------
 try:
-    # user_chat_element = ("body > div:nth-child(1) > main:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > span:nth-child(1) > span:nth-child(1)")
     user_chat_element = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, "body > div:nth-child(1) > main:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > span:nth-child(1) > span:nth-child(1)"))
+        EC.element_to_be_clickable((By.XPATH, "//span[contains(text(),'Erik Berglof')]"))
     )
     driver.execute_script("arguments[0].scrollIntoView();", user_chat_element)
     actions.move_to_element(user_chat_element).click().perform()
     time.sleep(5)
 except Exception as e:
-    logging.critical(f"error in finding the user to be clickable:{e}")
+    logging.critical(f"Error selecting user chat: {e}")
 
-    type_message_element = ("//textarea[contains(@placeholder,'Message')]")
-    wait_and_click("By.XPATH", type_message_element, "click to type message")
-    time.sleep(1)
-
+# -------- Type Message --------
 try:
     message_input = WebDriverWait(driver, 5).until(
         EC.element_to_be_clickable((By.XPATH, "//textarea[contains(@placeholder,'Message')]"))
     )
-    message_input.send_keys("Hello, How are you?")
+    message_input.send_keys("Hello, How are you abc?")
+    logging.info("Message typed successfully.")
     time.sleep(2)
-    logging.info("message typed into input box")
-except(TimeoutException, WebDriverException) as e:
-        log_and_raise_error("message typing into box", e)
+except (TimeoutException, WebDriverException) as e:
+    log_and_raise_error("Typing message", e)
+
+# -------- Send Message --------
 try:
-    send_message_to_user = "//*[name()='path' and contains(@d,'M16.1391 2')]"
-    wait_and_click(By.XPATH, send_message_to_user, "click send button")
+    send_button_xpath = "//*[name()='path' and contains(@d,'M16.1391 2')]"
+    wait_and_click(By.XPATH, send_button_xpath, "Click send button")
 except Exception as e:
-    logging.critical(f"send message in chat failed as {e}")
+    logging.critical(f"Sending message failed: {e}")
 
+# -------- Translation Flow --------
+translation_flow = [
+    (By.XPATH, "(//span[contains(text(),'Translate')])[9]", "Click translate button"),
+    (By.XPATH, "(//span[@class='p-dropdown-label p-inputtext p-placeholder'])[1]", "Open language dropdown"),
+    (By.XPATH, "(//div[contains(text(),'Arabic')])[1]", "Select Arabic language"),
+    (By.XPATH, "//button[@aria-label='Translate']", "Confirm translation")
+]
 
-print("click enter to exit")
-input()
+for by, locator, desc in translation_flow:
+    try:
+        wait_and_click(by, locator, desc)
+        time.sleep(3 if "language" in desc else 10)
+    except Exception as e:
+        logging.error(f"{desc} failed: {e}")
 
+input("\nPress ENTER to exit...")
 
